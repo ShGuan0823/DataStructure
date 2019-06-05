@@ -52,11 +52,19 @@ public class ExchangeSort {
         return array;
     }
 
+    /**
+     * 快速排序（非递归）
+     * @param low
+     * @param high
+     * @param array
+     * @return
+     */
     public static int[] quickSort(int low, int high, int[] array) {
         int pivot;
         if (low >= high) {
             return null;
         }
+        // 模拟栈
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(low);
         stack.push(high);
