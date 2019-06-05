@@ -16,20 +16,23 @@ public class Main {
         int[] array = {52, 39, 67, 95, 70, 8, 25, 52};
 
 //        // 直接插入排序
-//        int[] insert = InsertiontSort.insertionSort(array);
+//        InsertiontSort.insertionSort(array);
 
 //        // 带哨直接插入排序
-//        int[] insertWithGuard = InsertiontSort.insertionSortWithGuard(array);
+//        InsertiontSort.insertionSortWithGuard(array);
 
 //        // 希尔排序
 //        int[] incremental = {5, 3, 1};
-//        int[] shell = InsertiontSort.shellSort(array, incremental);
+//        InsertiontSort.shellSort(array, incremental);
 
 //        // 冒泡排序
-//        int[] bubble = ExchangeSort.bubbleSort(array);
+//        ExchangeSort.bubbleSort(array);
 
-//        // 快排
-//        int[] quick = ExchangeSort.quickSort(0, array.length-1, array);
+//        // 快排（递归）
+//        ExchangeSort.reQuickSort(0, array.length-1, array);
+
+//        // 快排（非递归）
+//        ExchangeSort.quickSort(0, array.length-1, array);
     }
 
 }
