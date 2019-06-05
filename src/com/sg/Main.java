@@ -3,6 +3,7 @@ package com.sg;
 
 import com.sg.sort.ExchangeSort;
 import com.sg.sort.InsertiontSort;
+import com.sg.sort.SelectionSort;
 
 /**
  * @Description 主函数
@@ -33,6 +34,9 @@ public class Main {
 
 //        // 快排（非递归）
 //        ExchangeSort.quickSort(0, array.length-1, array);
+
+//        // 直接排序
+//        SelectionSort.selectionSort(array);
     }
 
 }
