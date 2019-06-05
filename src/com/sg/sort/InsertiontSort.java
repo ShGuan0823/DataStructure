@@ -7,13 +7,13 @@ import com.sg.common.Tools;
  * @Author ShGuan
  * @Date 2019/6/4 23:58
  **/
-public class insertiontSort {
+public class InsertiontSort {
 
     /**
      * 直接插入排序（不带监视哨）
      * @param array 待排序数组
      */
-    public static void insertionSort(int[] array) {
+    public static int[] insertionSort(int[] array) {
         int len = array.length;
         int i, j, temp;
         // n-1
@@ -28,27 +28,32 @@ public class insertiontSort {
             // 插入array[i]
             array[j+1] = temp;
         }
-
+        return array;
     }
 
     /**
      * 直接插入排序（带监视哨）
      * @param array 待排序数组(从下标为1开始存放，下标为0为监视哨)
      */
-    public static void insertionSortWithGuard(int[] array) {
+    public static int[] insertionSortWithGuard(int[] array) {
         int len = array.length;
+        int[] array2 = new int[len+1];
         int i, j;
+        for (int m = 0; m < len; m++) {
+            array2[m+1] = array[m];
+        }
         for (i = 1; i < len; i++) {
             // 监视哨
-            array[0] = array[i];
+            array2[0] = array2[i];
             // 不需要坐数组越界控制， 当j为0时，自动退出循环
-            for (j = i-1; Tools.comPareTo(array[0], array[j]) < 0; j--) {
+            for (j = i-1; Tools.comPareTo(array2[0], array2[j]) < 0; j--) {
                 // 比array[i]大的记录后移
-                array[j+1] = array[j];
+                array2[j+1] = array2[j];
             }
             // 插入array[i]
-            array[j+1] = array[0];
+            array2[j+1] = array2[0];
         }
+        return array2;
     }
 
     /**
@@ -56,7 +61,7 @@ public class insertiontSort {
      * @param array 待排序数组
      * @param incremental 增量
      */
-    public static void shellSort(int[] array, int[] incremental) {
+    public static int[] shellSort(int[] array, int[] incremental) {
         int arrayLen = array.length;
         int increLen = incremental.length;
         int i, j, temp;
@@ -72,9 +77,7 @@ public class insertiontSort {
                 array[j+ink] = temp;
             }
         }
-
+        return array;
     }
-
-
 
 }
