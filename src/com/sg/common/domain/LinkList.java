@@ -1,7 +1,6 @@
 package com.sg.common.domain;
 
 import com.sg.common.IList;
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.util.Scanner;
 
