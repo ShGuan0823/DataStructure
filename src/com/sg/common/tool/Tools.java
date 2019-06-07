@@ -1,4 +1,4 @@
-package com.sg.common;
+package com.sg.common.tool;
 
 /**
  * @Description TODO

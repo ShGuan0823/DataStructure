@@ -1,6 +1,6 @@
 package com.sg.sort;
 
-import com.sg.common.Tools;
+import com.sg.common.tool.Tools;
 
 import java.util.Stack;
 

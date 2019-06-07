@@ -1,6 +1,6 @@
 package com.sg.sort;
 
-import com.sg.common.Tools;
+import com.sg.common.tool.Tools;
 
 /**
  * @Description 选择排序
@@ -32,5 +32,5 @@ public class SelectionSort {
         }
         return array;
     }
-    
+
 }
