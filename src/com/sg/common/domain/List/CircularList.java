@@ -1,11 +1,13 @@
-package com.sg.common.domain;
+package com.sg.common.domain.List;
+
+import com.sg.common.domain.Node.LinkNode;
 
 /**
  * @Description 循环链表
  * @Author ShGuan
  * @Date 2019/6/7 16:51
  **/
-public class CircularList extends LinkList{
+public class CircularList extends LinkList {
 
     /**
      * 头结点

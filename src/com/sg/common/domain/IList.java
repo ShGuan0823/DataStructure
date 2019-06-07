@@ -1,6 +1,5 @@
-package com.sg.common;
+package com.sg.common.domain;
 
-import javax.management.ObjectName;
 
 /**
  * @Description 线性表顺序存储

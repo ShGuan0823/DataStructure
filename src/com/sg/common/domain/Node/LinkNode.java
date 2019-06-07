@@ -1,4 +1,4 @@
-package com.sg.common.domain;
+package com.sg.common.domain.Node;
 
 /**
  * @Description 链表节点
@@ -13,7 +13,7 @@ public class LinkNode {
     private Object data;
 
     /**
-     * 后继节点引用
+     * 后继结点引用
      */
     private LinkNode next;
 

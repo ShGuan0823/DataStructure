@@ -1,4 +1,4 @@
-package com.sg.common.domain;
+package com.sg.common.domain.Node;
 
 import java.util.List;
 

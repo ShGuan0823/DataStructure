@@ -1,6 +1,6 @@
-package com.sg.common.domain;
+package com.sg.common.domain.List;
 
-import com.sg.common.IList;
+import com.sg.common.domain.IList;
 
 /**
  * @Description线性表顺序存储实现
